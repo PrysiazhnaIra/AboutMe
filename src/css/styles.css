@@ -1,20 +1,18 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./about-me.css');
+
+@font-face {
+  font-family: 'Impact', sans-serif;
+  src: url(../font/impact.ttf);
+}
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
+  color: #292929;
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -22,4 +20,52 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+/* about-me */
+
+/* addapting */
+@media screen and (min-width: 360px) {
+  .container {
+    max-width: 375;
+  }
 }
