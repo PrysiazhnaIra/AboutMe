@@ -7,13 +7,35 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/etra/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/etra/assets/vendor-3104a0c6.js">
+    <link rel="stylesheet" href="/etra/assets/vendor-8255b786.css">
     <link rel="stylesheet" href="/etra/assets/index-45cbfdd0.css">
   </head>
   <body>
 
-    ENOENT: no such file or directory, open '/home/runner/work/extra/extra/src/partials/header.html'
-    <h2 class="title-about">About <span>me</span></h2>
-<img class="photo-about" />
+    <div class="container">
+<h2 class="title-about">About <span>me</span></h2>
+<picture class="photo-about" >
+  <source
+    media="(min-width: 1280px)"
+    srcset="/etra/assets/main-person-deck-995f0ae9.jpg 1x, /etra/assets/main-person-desk-2x-13cef02f.jpg 2x"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="/etra/assets/main-person-tab-07424181.jpg 1x, /etra/assets/main-person-tab-2x-bfe57448.jpg 2x"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="/etra/assets/main-person-mob-92fbe6c9.jpg 1x, /etra/assets/main-person-mob-2x-256cc022.jpg 2x"
+  />
+  <img
+  class="photo-about-img"
+    src="../img/main-person-tab.jpg"
+    alt="photo"
+    width="320"
+  />
+</picture>
+
 <h3 class="title-about-bio">BIO</h3>
 <p class="text-about-bio">
   I'm Lloyd Jefferson, a talented programmer specializing in software
@@ -46,9 +68,44 @@
 <li class="item-about-role">HeadlessCMS, Wordpress</li>
 <li class="item-about-role">Blender (enjoy)</li>
 </ul>
+</div>
 
-    <h2>frequently asked <span>question</span></h2>
-
+    <section class="faq">
+    <div class="container">
+<h2 class="faq-title">frequently asked <span>question</span></h2>
+<div class="accardion-container">
+<ul class="faq-list">
+   <li class="faq-list-item">
+    <h4 class="faq-item-title">What programming languages ​​are most often used in your project?</h4>
+    <p class="faq-item-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+   </li>
+   <li class="faq-list-item">
+    <h4 class="faq-item-title">What are the deadlines for the project?</h4>
+    <p class="faq-item-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+   </li>
+   <li class="faq-list-item">
+    <h4 class="faq-item-title">What payment methods do you accept?</h4>
+    <p class="faq-item-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+   </li>
+   <li class="faq-list-item">
+    <h4 class="faq-item-title">How can I contact you?</h4>
+    <p class="faq-item-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+   </li>
+   <li class="faq-list-item">
+    <h4 class="faq-item-title">Do you provide advice or support?</h4>
+    <p class="faq-item-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+   </li>
+   <li class="faq-list-item">
+    <h4 class="faq-item-title">What does the process of developing a software product look like from idea to implementation?</h4>
+    <p class="faq-item-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+   </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
     
   </body>
 </html>
