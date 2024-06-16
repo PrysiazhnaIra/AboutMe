@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/etra/",
+    "build": "vite build --base=/extra/",
     "preview": "vite preview"
   },
   "devDependencies": {
