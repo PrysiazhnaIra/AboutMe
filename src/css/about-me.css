@@ -1,0 +1,91 @@
+.about-general-block{
+    display: block;
+    row-gap: 10px;
+}
+.about-bio-block, .about-education-block, .about-roles-block {
+    margin-top: 10px;
+    padding: 28px 24px;
+    color: #292929;
+    border-radius: 16px;
+    background: rgba(229, 202, 207, 1);
+}
+
+.text-about-bio-end{
+    display: none;
+}
+
+.image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    display: block;
+    object-fit: cover;
+    object-position: 50% 5%;
+    overflow: hidden;
+    height: 350px;
+    width: 100%;
+    border-radius: 16px;
+  }
+  
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+  }
+
+  @media screen and (min-width: 360px, max-width: 375px) {
+    .image-container img {
+      object-fit: cover;
+      object-position: 80% 50%;
+      height: 450px;
+      width: 335px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+  
+    .text-about-bio-end{
+        display: block;
+    }
+
+    .image-container img {
+      height: 650px;
+      width: 704px;
+      object-position: top right;
+    }
+
+    .about-bio-block, .about-education-block, .about-roles-block {
+        margin-top: 20px;
+        width: 704px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-general-block{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-left-block {
+        margin-top: 130px;
+    }
+
+    .about-right-block {
+        /* margin-top: 110px; */
+    }
+
+    .about-bio-block, .about-education-block, .about-roles-block {
+        width: 700px;
+    }
+    
+    .image-container img {
+      height: 500px;
+      width: 430px;
+      object-position: 80%;
+    }
+}

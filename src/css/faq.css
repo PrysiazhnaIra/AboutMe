@@ -3,12 +3,13 @@
 }
 
 .faq-list-item {
-    background: var(--White, #F0F0F0);
+    /* background: var(--White, #F0F0F0); */
     border-radius: 0;
     padding: 28px 24px;
 }
 
 .faq-list-item-active {
+    color: #292929;
     border-radius: 16px;
     background: rgba(229, 202, 207, 1);
 }
@@ -35,9 +36,13 @@
     width: 224px;
 }
 
-.faq-icon-up,
-.faq-icon-down {
+.faq-icon-up {
     stroke: #292929;
+    fill: transparent;
+}
+
+.faq-icon-down {
+    stroke: #fffce1;
     fill: transparent;
 }
 
@@ -98,10 +103,12 @@
 }
 
 .faq-decor {
-    background-image: url('../img/decor-faq.png');
-    background-size: 526px 408px;
+    background-image: url('../img/decor.png');
+    background-size: 526px 508px;
     background-position: right bottom;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    stroke:  #E5CACF;
+    fill: transparent;
 }
 
 }
