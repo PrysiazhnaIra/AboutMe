@@ -4,100 +4,186 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/etra/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
     <script type="module" crossorigin src="/etra/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/etra/assets/vendor-3104a0c6.js">
+    <link rel="modulepreload" crossorigin href="/etra/assets/vendor-8f98089f.js">
     <link rel="stylesheet" href="/etra/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/etra/assets/index-45cbfdd0.css">
+    <link rel="stylesheet" href="/etra/assets/index-af89dfa2.css">
   </head>
   <body>
 
-    <div class="container">
+    <div class="container about-general-block">
+  <div class="about-left-block">
 <h2 class="title-about">About <span>me</span></h2>
-<picture class="photo-about" >
-  <source
-    media="(min-width: 1280px)"
-    srcset="/etra/assets/main-person-deck-995f0ae9.jpg 1x, /etra/assets/main-person-desk-2x-13cef02f.jpg 2x"
-  />
-  <source
-    media="(min-width: 768px)"
-    srcset="/etra/assets/main-person-tab-07424181.jpg 1x, /etra/assets/main-person-tab-2x-bfe57448.jpg 2x"
-  />
-  <source
-    media="(max-width: 767px)"
-    srcset="/etra/assets/main-person-mob-92fbe6c9.jpg 1x, /etra/assets/main-person-mob-2x-256cc022.jpg 2x"
-  />
-  <img
-  class="photo-about-img"
-    src="../img/main-person-tab.jpg"
-    alt="photo"
-    width="320"
-  />
+<picture class="image-container">
+  <source srcset="../img/photo.png" />
+  <img src="../img/photo.png" alt="My photo" />
 </picture>
-
-<h3 class="title-about-bio">BIO</h3>
-<p class="text-about-bio">
-  I'm Lloyd Jefferson, a talented programmer specializing in software
-  development. My expertise spans various programming languages and
-  technologies, and I am dedicated to continually enhancing my skills. I thrive
-  on seeking unconventional and creative solutions to problems, leveraging a
-  high level of analytical skills to effectively tackle even the most
-  challenging tasks.
+</div>
+<div class="about-right-block">
+<div class="about-bio-block about-item">
+<h3 class="title-about-bio" id="hideButton">BIO</h3>
+<div id="myTexts">
+<p class="text-about-bio-start">
+My name is Ira Prysiazhna. I am a Front-end Developer. 
+Coming to my skills I know CSS, HTM, JavaScript, and I learn React and Node.js.
+I have completed a few of my successful personal and team projects. Also, I have accomplished a marathon of GO IT School and created my extra individual project.
+<p class="text-about-bio-end">
+  I am a organized, disciplined, motivated and detail-oriented Front-end Developer, eager to validate my current skills, expand my expertise and consolidate my technical abilities in development. My  strong commitment to professional development and eagerness to learn and grow is demonstrated through my continuous pursuit of new skills and knowledge. I am passionate about bring my abilities to contribute to a dynamic team and drive success for the company.
 </p>
-<p class="text-about-bio">
-  Adaptable to both independent and team-oriented work, I collaborate seamlessly
-  with colleagues, exchanging ideas and finding optimal solutions. My
-  professional maturity enables me to navigate challenges and stressful
-  situations with a calm demeanor, maintaining a consistently high quality of
-  work. Committed to self-improvement, I actively engage in studying new
-  technologies and practices to stay current with the latest innovations in the
-  field.
-</p>
-<h3 class="title-about-education">EDUCATION</h3>
-<ul class="list-about-education">
-<li class="item-about-aducation">2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</li>
+</div>
+</div>
+<div class="about-education-block about-item">
+<h3 class="title-about-education about-title">EDUCATION</h3>
+<ul class="list-about-education about-text">
+<li class="item-about-aducation">2023 - 2024 / Fullstack Developer, IT School GoIT</li>
 <li class="item-about-aducation">
-  2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York
-</li>
-<li class="item-about-aducation">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+  2011 - 2015 / Master's degree in economic cybernetics, Vinnytsia Institute of Trade and Economics of State University of Trade and Economics</li>
 </ul>
-<h3 class="title-about-role">ROLE</h3>
-<ul class="list-about-role">
-<li class="item-about-role">Frontend development</li>
-<li class="item-about-role">HeadlessCMS, Wordpress</li>
-<li class="item-about-role">Blender (enjoy)</li>
+</div>
+<div class="about-roles-block about-item">
+<h3 class="title-about-role about-title">ROLES</h3>
+<ul class="list-about-role about-text">
+<li class="item-about-role">Frontend developer</li>
+<li class="item-about-role">Code reviewer</li>
+</div>
 </ul>
+</div>
 </div>
 
     <section class="faq">
-    <div class="container">
+    <div class="container faq-general-block">
+<div class="faq-first-block faq-decor">
 <h2 class="faq-title">frequently asked <span>question</span></h2>
-<div class="accardion-container">
+</div>
+<div class="faq-second-block">
 <ul class="faq-list">
+    <li class="faq-list-item">
+        <div class="faq-title-arrow">
+        <h4 class="faq-item-title">How are you improving your professional skills?</h4>
+        <svg class="faq-icon-up" width="24" height="24">
+            <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+        </svg>
+        <svg class="faq-icon-down" width="24" height="24">
+            <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+        </svg>
+    </div>
+        <p class="faq-item-text">To improve my professional skills, I took a training course at GoIT School. I find useful key sources that I always review to summarize, taste and enhance my knowledge. I have also enrolled in an extra course at Duke University to validate my current skills, expand my expertise and consolidate my technical abilities in development. I aim to showcase strengths there to obtain a certificate upon accomplishing the course.
+            </p>
+       </li>
+       <li class="faq-list-item">
+        <div class="faq-title-arrow">
+        <h4 class="faq-item-title">What are you looking for in your next job and employer?</h4>
+        <svg class="faq-icon-up" width="24" height="24">
+            <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+        </svg>
+        <svg class="faq-icon-down" width="24" height="24">
+            <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+        </svg>
+    </div>
+        <p class="faq-item-text">In my next job, I would like to learn and grow more. I want to work with people who help each other. It’s also important to me that the company cares about helping their employees succeed and grow. Overall, I just want to be in a place where I can do my work effectively and keep getting better.</p>
+       </li>
+    <li class="faq-list-item">
+        <div class="faq-title-arrow">
+        <h4 class="faq-item-title">How do you handle stress and pressure?</h4>
+        <svg class="faq-icon-up" width="24" height="24">
+            <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+        </svg>
+        <svg class="faq-icon-down" width="24" height="24">
+            <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+        </svg>
+    </div>
+        <p class="faq-item-text">I handle stress and pressure by setting priorities, managing my time effectively, maintaining communication with colleagues, friends and family about my feelings. Additionally, I prioritize a healthy lifestyle including regular exercise, sufficient sleep  and quality food. These practices help me to be productive, stay calm and focus on finding solutions. 
+            </p>
+       </li>
    <li class="faq-list-item">
-    <h4 class="faq-item-title">What programming languages ​​are most often used in your project?</h4>
-    <p class="faq-item-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+    <div class="faq-title-arrow">
+    <h4 class="faq-item-title">What are you doing to improve your English?</h4>
+    <svg class="faq-icon-up" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+    </svg>
+    <svg class="faq-icon-down" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+    </svg>
+</div>
+    <p class="faq-item-text">English is a very popular language, and I understand that I should improve it every day. To achieve this, I have enrolled in a course at Flesh School to boost my skills. Additionally, I participate in different speaking clubs at least once a week. I enjoy singing along to my favorite English songs to ensure correct pronunciation. Watching movies in English helps me improve my listening skills. I also follow various English channels on Instagram to know the ins and outs of English grammar. Furthermore, I have set several of my key devices to English settings to immerse myself  in the language environment. I regularly use Quizlet to memorize new words effectively. Lastly, I listen to BBC learning English to enhance my understanding of language’s nuances and expressions. 
+        </p>
    </li>
    <li class="faq-list-item">
-    <h4 class="faq-item-title">What are the deadlines for the project?</h4>
-    <p class="faq-item-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+    <div class="faq-title-arrow">
+    <h4 class="faq-item-title">What are your career goals?</h4>
+    <svg class="faq-icon-up" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+    </svg>
+    <svg class="faq-icon-down" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+    </svg>
+    </div>
+    <p class="faq-item-text">As a developer, my primary career goal is to continually improve my skills and knowledge in development. I am enthusiastic about exploring different programming languages and technologies. I aspire to advance and become a highly skilled developer for your company.</p>
    </li>
    <li class="faq-list-item">
-    <h4 class="faq-item-title">What payment methods do you accept?</h4>
-    <p class="faq-item-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+    <div class="faq-title-arrow">
+    <h4 class="faq-item-title">How do you prioritize? </h4>
+    <svg class="faq-icon-up" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+    </svg>
+    <svg class="faq-icon-down" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+    </svg>
+    </div>
+    <p class="faq-item-text">I prioritize my work according to the objectives of the company and what is expected of me as a developer. I always use a 5-step process to prioritize my work. First, I create a to-do list for each day of the week. Then, I place each task in order of priority. To ensure focus, I minimize distractions. Additionally, I delegate tasks to complete it faster. Overall, I maintain a flexible and adaptable approach to my assignments. .</p>
    </li>
    <li class="faq-list-item">
-    <h4 class="faq-item-title">How can I contact you?</h4>
-    <p class="faq-item-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+    <div class="faq-title-arrow">
+    <h4 class="faq-item-title">How do you manage your time?</h4>
+    <svg class="faq-icon-up" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+    </svg>
+    <svg class="faq-icon-down" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+    </svg>
+    </div>
+    <p class="faq-item-text">Time management helps me manage my workflow and keeps me on the track. I set clear deadlines and compile structured to-do lists to accomplish my tasks in time and successfully. </p>
    </li>
    <li class="faq-list-item">
-    <h4 class="faq-item-title">Do you provide advice or support?</h4>
-    <p class="faq-item-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+    <div class="faq-title-arrow">
+    <h4 class="faq-item-title">What is your greatest weakness/strength? </h4>
+    <svg class="faq-icon-up" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+    </svg>
+    <svg class="faq-icon-down" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+    </svg>
+    </div>
+    <p class="faq-item-text">My greatest strength is my ability to effectively communicate and collaborate within a team. These skills contribute to a more efficient development process, therefore, I can contribute to the team’s productivity and ensure the successful delivery of projects. I pay close attention to details and deadlines,ensuring that my team doesn’t miss any crucial points. My greatest weakness is my Language skills, particularly in listening. I have found that understanding spoken English can sometimes be challenging for me. To address this, I am actively working on improving my listening and speaking skills. I use every opportunity to enhance my English proficiency. The continuous improvement helps me better understand and collaborate with my team, ensuring effective communication in all aspects of my work.
+        </p>
    </li>
    <li class="faq-list-item">
-    <h4 class="faq-item-title">What does the process of developing a software product look like from idea to implementation?</h4>
-    <p class="faq-item-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+    <div class="faq-title-arrow">
+    <h4 class="faq-item-title">Why did you leave your previous job?</h4>
+    <svg class="faq-icon-up" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-up"></use>
+    </svg>
+    <svg class="faq-icon-down" width="24" height="24">
+        <use href="/etra/assets/icons-c3f570d0.svg#icon-arrow-down"></use>
+    </svg>
+    </div>
+    <p class="faq-item-text">I left my previous job because I wanted to grow more. Even though I learned a lot there, I felt like I needed new challenges to improve myself. I believe it is important to keep learning and enjoy your work.
+        </p>
    </li>
 </ul>
 </div>
