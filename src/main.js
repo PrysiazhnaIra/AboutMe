@@ -1,2 +1,3 @@
-import './js/faq';
 import './js/am';
+
+import './js/faq';
