@@ -3,6 +3,7 @@
 @import url('./about-me.css');
 @import url('./tech.css');
 @import url('./faq.css');
+@import url('./footer.css');
 
 @font-face {
   font-family: 'Impact';
@@ -164,4 +165,9 @@ p span {
   .container {
     max-width: 1280px;
   }
+}
+
+#butterfly {
+  width: 120px;
+  height: 120px;
 }

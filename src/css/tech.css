@@ -1,8 +1,8 @@
-  /* *,
+  *,
   *::before,
   *::after {
     box-sizing: border-box;
-  } */
+  }
   
   .skill-block-first {
     background-color: #E4E5E6;
@@ -30,6 +30,7 @@
 
   .skill-list.reverse {
     flex-direction: row-reverse;
+    animation: marqueeLineRight 17s linear infinite;
 }
 
   .skill-block-first .skill-list {
@@ -65,7 +66,3 @@
 .marquee1 {
     transform: skewY(-4deg);
 }
-
-/* .marquee2 {
-    transform: skewY(2deg);
-} */
