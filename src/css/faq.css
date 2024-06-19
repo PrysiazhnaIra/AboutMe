@@ -28,6 +28,7 @@
 }
 
 .faq-title-arrow {
+    cursor: url('../img/cursor.cur'), auto;
     display: flex;
     justify-content: space-between;
 }
