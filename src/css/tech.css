@@ -1,68 +1,68 @@
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  .skill-block-first {
-    background-color: #E4E5E6;
-    color: #DE4F69;
-  }
-  
-  .skill-block-second {
-    background-color: #E5CACF;
-    color: black;
-  }
-  .marquee {
-    overflow: hidden;
-    width: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-  .skill-list {
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    padding: 10px 15px;
-    flex-shrink: 0;
-    margin: 0;
-    animation: marqueeLine 17s linear infinite; 
-  }
-
-  .skill-list.reverse {
-    flex-direction: row-reverse;
-    animation: marqueeLineRight 17s linear infinite;
+.skill-block-first {
+  background-color: #e4e5e6;
+  color: #de4f69;
 }
 
-  .skill-block-first .skill-list {
-    animation-name: marqueeLineLeft;
+.skill-block-second {
+  background-color: #e5cacf;
+  color: black;
+}
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 10px 15px;
+  flex-shrink: 0;
+  margin: 0;
+  animation: marqueeLine 17s linear infinite;
+}
+
+.skill-list.reverse {
+  flex-direction: row-reverse;
+  animation: marqueeLineRight 17s linear infinite;
+}
+
+.skill-block-first .skill-list {
+  animation-name: marqueeLineLeft;
 }
 
 .skill-block-second .skill-list {
-    animation-name: marqueeLineRight;
+  animation-name: marqueeLineRight;
 }
 
 @keyframes marqueeLineLeft {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes marqueeLineRight {
-    from {
-        transform: translateX(0);
-    }
-    
-    to {
-        transform: translateX(100%);
-    }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
 
 .marquee1 {
-    transform: skewY(-4deg);
+  transform: skewY(-2deg);
 }

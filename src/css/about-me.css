@@ -1,99 +1,104 @@
-.about-general-block{
-    display: block;
-    row-gap: 10px;
+.about-general-block {
+  display: block;
+  row-gap: 10px;
 }
-.about-bio-block, .about-education-block, .about-roles-block {
-    margin-top: 10px;
-    padding: 28px 24px;
-    color: #292929;
-    border-radius: 16px;
-    background: rgba(229, 202, 207, 1);
+.about-bio-block,
+.about-education-block,
+.about-roles-block {
+  margin-top: 10px;
+  padding: 28px 24px;
+  color: #292929;
+  border-radius: 16px;
+  background: rgba(229, 202, 207, 1);
 }
 
-.text-about-bio-end{
-    display: none;
+.text-about-bio-end {
+  display: none;
 }
 
 .my-photo-container {
-    position: relative;
-  }
-  
-  .my-photo-container img {
-    display: block;
-    object-fit: cover;
-    object-position: 50% 5%;
-    overflow: hidden;
-    height: 350px;
-    width: 100%;
-    border-radius: 16px;
-  }
+  position: relative;
+}
 
-  .my-photo-img {
-    transition: transform 0.3s ease;
-  }
+.my-photo-container img {
+  display: block;
+  object-fit: cover;
+  object-position: 50% 5%;
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.my-photo-img {
+  transition: transform 0.3s ease;
+}
 
 .my-photo-img:hover,
-.my-photo-img:focus { 
-    transform: scale(1.1);
+.my-photo-img:focus {
+  transform: scale(1.1);
+}
+
+.my-photo-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 360px, max-width: 375px) {
+  .my-photo-container img {
+    object-fit: cover;
+    object-position: 80% 50%;
+    height: 450px;
+    width: 335px;
   }
-  
-  .my-photo-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .text-about-bio-end {
+    display: block;
   }
 
-  @media screen and (min-width: 360px, max-width: 375px) {
-    .my-photo-container img {
-      object-fit: cover;
-      object-position: 80% 50%;
-      height: 450px;
-      width: 335px;
-    }
+  .my-photo-container img {
+    height: 650px;
+    width: 704px;
+    object-position: top right;
   }
 
-  @media screen and (min-width: 768px) {
-  
-    .text-about-bio-end{
-        display: block;
-    }
-
-    .my-photo-container img {
-      height: 650px;
-      width: 704px;
-      object-position: top right;
-    }
-
-    .about-bio-block, .about-education-block, .about-roles-block {
-        margin-top: 20px;
-        width: 704px;
-    }
+  .about-bio-block,
+  .about-education-block,
+  .about-roles-block {
+    margin-top: 20px;
+    width: 704px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .about-general-block{
-        display: flex;
-        justify-content: space-between;
-    }
+  .about-general-block {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .about-left-block {
-        margin-top: 130px;
-    }
+  .about-left-block {
+    margin-top: 130px;
+  }
 
-    .about-right-block {
-    }
+  .about-right-block {
+  }
 
-    .about-bio-block, .about-education-block, .about-roles-block {
-        width: 700px;
-    }
-    
-    .my-photo-container img {
-      height: 500px;
-      width: 430px;
-      object-position: 80%;
-    }
+  .about-bio-block,
+  .about-education-block,
+  .about-roles-block {
+    width: 700px;
+  }
+
+  .my-photo-container img {
+    height: 500px;
+    width: 430px;
+    object-position: 80%;
+  }
 }

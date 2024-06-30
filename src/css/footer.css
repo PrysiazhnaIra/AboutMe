@@ -1,20 +1,47 @@
-#butterfly {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: top 2s, left 2s;
+.footer {
+  margin-bottom: 40px;
+}
+
+.footer-general-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-title {
+}
+
+.footer-list {
+  padding: 20px 0;
+}
+
+.footer-data {
+}
+
+@media screen and (min-width: 768px) {
+  .footer-general-block {
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
-  #butterfly img {
-    position: absolute;
-    animation: flap 0.5s infinite;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-general-block {
+    flex-direction: column;
+    justify-content: space-between;
   }
-  
-  #butterfly #wing2 {
-    animation-delay: 0.25s;
+
+  .footer-list {
+    display: flex;
+    column-gap: 40px;
+    padding: 0;
   }
-  
-  @keyframes flap {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+  .footer-data-block {
+    display: flex;
+    column-gap: 40px;
+    padding: 20px 0;
   }
+}
