@@ -1,5 +1,5 @@
 @import url('./reset.css');
-
+@import url('./header.css');
 @import url('./about-me.css');
 @import url('./tech.css');
 @import url('./faq.css');
@@ -73,7 +73,6 @@ h2,
   text-transform: uppercase;
 }
 
-
 h1 {
   font-size: 64px;
   line-height: 1.25;
@@ -110,7 +109,11 @@ h3 span,
 .logo-header span,
 .logo-footer span,
 p span {
-  color:#DE4F69;
+  color: #de4f69;
+}
+
+a {
+  cursor: url('../img/cursor.cur'), auto;
 }
 
 /* addapting */
@@ -120,7 +123,6 @@ p span {
     max-width: 375;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .container {
@@ -188,6 +190,11 @@ p span {
 }
 
 @keyframes flap {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }

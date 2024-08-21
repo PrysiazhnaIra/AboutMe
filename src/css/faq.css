@@ -1,115 +1,109 @@
 .faq-list {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .faq-list-item {
-    /* background: var(--White, #F0F0F0); */
-    border-radius: 0;
-    padding: 28px 24px;
+  border-radius: 0;
+  padding: 28px 24px;
 }
 
 .faq-list-item-active {
-    color: #292929;
-    border-radius: 16px;
-    background: rgba(229, 202, 207, 1);
+  color: #292929;
+  border-radius: 16px;
+  background: rgba(229, 202, 207, 1);
 }
 
 .faq-list-item + .faq-list-item {
-    border-top: 1px solid #CCC;
+  border-top: 1px solid #ccc;
 }
 
 .faq-list-item-active,
 .faq-list-item-active + .faq-list-item {
-    border-top: none;
+  border-top: none;
 }
 
 .faq-list-item:last-child {
-    border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
 }
 
 .faq-title-arrow {
-    cursor: url('../img/cursor.cur'), auto;
-    display: flex;
-    justify-content: space-between;
+  cursor: url('../img/cursor.cur'), auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .faq-item-title {
-    width: 224px;
+  width: 224px;
 }
 
 .faq-icon-up {
-    stroke: #292929;
-    fill: transparent;
+  stroke: #292929;
+  fill: transparent;
 }
 
 .faq-icon-down {
-    stroke: #fffce1;
-    fill: transparent;
+  stroke: #fffce1;
+  fill: transparent;
 }
 
 .faq-icon-up {
-    display: none;
+  display: none;
 }
 
 .faq-list-item-active .faq-icon-up {
-    display: inline;
+  display: inline;
 }
 
 .faq-list-item-active .faq-icon-down {
-    display: none;
+  display: none;
 }
 
 .faq-item-text {
-    display: none;
+  display: none;
 }
 
 .faq-list-item-active .faq-item-text {
-    display: inline-block;
-    margin-top: 24px;
+  display: inline-block;
+  margin-top: 24px;
 }
 
 @media screen and (min-width: 360px) {
-
 }
 
 @media screen and (min-width: 768px) {
-
-.faq-list-item {
+  .faq-list-item {
     width: 704px;
-}
+  }
 
-.faq-item-title {
+  .faq-item-title {
     width: 600px;
-}
-
+  }
 }
 
 @media screen and (min-width: 1280px) {
-
-.faq-list-item {
+  .faq-list-item {
     width: 592px;
-}
+  }
 
-.faq-item-title {
+  .faq-item-title {
     width: 488px;
-}
+  }
 
-.faq-general-block {
+  .faq-general-block {
     display: flex;
     column-gap: 98px;
-}
+  }
 
-.faq-list {
+  .faq-list {
     margin-top: 130px;
-}
+  }
 
-.faq-decor {
+  .faq-decor {
     background-image: url('../img/decor.png');
     background-size: 526px 508px;
     background-position: right bottom;
     background-repeat: repeat;
-    stroke:  #E5CACF;
+    stroke: #e5cacf;
     fill: transparent;
-}
-
+  }
 }
