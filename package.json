@@ -1,11 +1,11 @@
 {
-  "name": "extra",
+  "name": "AboutMe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/extra/",
+    "build": "vite build --base=/AboutMe/",
     "preview": "vite preview"
   },
   "devDependencies": {
