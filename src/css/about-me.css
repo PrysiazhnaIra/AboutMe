@@ -2,6 +2,11 @@
   display: block;
   row-gap: 10px;
 }
+
+.title-about {
+  margin-top: 30px;
+}
+
 .about-bio-block,
 .about-education-block,
 .about-roles-block {

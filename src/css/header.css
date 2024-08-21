@@ -15,7 +15,7 @@
 
 .header-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   cursor: url('../img/cursor.cur'), auto;
   padding: 20px;
@@ -26,7 +26,7 @@
 
 .header-item a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: bold;
   transition: transform 0.3s ease, font-size 0.3s ease;
 }
@@ -34,4 +34,16 @@
 .header-item a:hover {
   color: #de4f69;
   transform: scale(1.1);
+}
+
+@media screen and (min-width: 360px, max-width: 375px) {
+  .header-item a {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-item a {
+    font-size: 40px;
+  }
 }
