@@ -102,3 +102,27 @@
     object-position: 80%;
   }
 }
+
+/* animation*/
+.about-item {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.about-item.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* animation type 2*/
+/* .about-item {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.about-item.fade-in {
+  transform: scale(1);
+  opacity: 1;
+} */
